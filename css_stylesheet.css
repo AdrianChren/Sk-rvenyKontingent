@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+div {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+input {
+  text-align: center;
+}
+#fromInput {
+  max-width: 50%;
+  min-width: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#toInput {
+  max-width: 50%;
+  min-width: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#date {
+  max-width: 50%;
+  min-width: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#time {
+  max-width: 50%;
+  min-width: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

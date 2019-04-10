@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ZSSK listky lahko</title>
+  <meta charset="utf-8">
+  <meta name="ZSSKtickets" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css_stylesheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="nakupuj.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+  $('input:text:first').focus();
+  $('input:text').bind('keydown', function(e) {
+  if (e.keyCode == 13) {
+  e.preventDefault();
+  var nextIndex = $('input:text').index(this) + 1;
+  var maxIndex = $('input:text').length;
+  if (nextIndex < maxIndex) {
+  $('input:text:eq(' + nextIndex+')').focus();
+  }}});});
+</script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1 class="display-4 text-dark">Kupuj listky rozumne</h1>
+</div>
+<div class="d-flex flex-column">
+  <div class="border rounded p-3 mb-2 bg-light text-dark">
+    <form autocomplete="off">
+    <div class="from-group">
+      <label for="fromInput">Odkiaľ</label>
+      <input id="fromInput" type="text" name="stations" class="form-control" tabindex="1" placeholder="Východzia stanica">
+    </div>
+    </form>
+  </div>
+</div>
+<div class="border rounded p-3 mb-2 bg-light text-dark">
+    <div class="form-group ">
+      <label for="toInput">Kam</label>
+      <input id="toInput" type="text" name="toInput" autocomplete="off" class="form-control" tabindex="2" placeholder="Cieľová stanica">
+
+    </div>
+</div>
+<div class="border rounded p-3 mb-2 bg-light text-dark">
+  <div class="form-group">
+    <label for="date">Kedy</label>
+    <input id="date" type="text" name="date" autocomplete="off" class="form-control" tabindex="3" placeholder="Dátum">
+  </div>
+  <div class="form-group">
+    <label for="time">O ktorej</label>
+    <input id="time" type="text" name="time" autocomplete="off" class="form-control" tabindex="4" placeholder="Čas">
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-2 bg-light text-dark">
+<button type="button" id = "submit" class="btn btn-success btn-lg btn-block" onclick="nakupuj()">Kupiť</button>
+</div>
+
+<div class="border rounded p-3 mb-2 bg-light text-dark">.bg-light</div>
+
+<div class="border rounded p-3 mb-2 bg-light text-dark">.bg-light</div>
+
+<div class="border rounded p-3 mb-2 bg-light text-dark">.bg-light</div>
+<div class="border rounded p-3 mb-2 bg-light text-dark">.bg-light</div>
+</div>
+</div>
+
+</body>
+</html>
